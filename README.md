@@ -1,39 +1,20 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Gleap Http Interceptor
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+![Gleap Flutter SDK Intro](https://raw.githubusercontent.com/GleapSDK/iOS-SDK/main/imgs/gleapheader.png)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+A http interceptor for [Gleap](https://pub.dev/packages/gleap_sdk).
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# Report and Fix Bugs the Easy Way
 
-## Features
+Gleap helps developers build the best software faster. It is your affordable in-app bug reporting tool for apps, websites and industrial applications.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Checkout our [website](https://gleap.io) to learn more about gleap.
 
-## Getting started
+## Docs & Examples
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Checkout our [documentation](https://docs.gleap.io/docs/flutter-sdk) for full reference. Include the following dependency in your pubspec.yml:
 
 ```dart
-const like = 'sample';
+dependencies:
+  gleap_dio_interceptor: "^1.0.0"
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.

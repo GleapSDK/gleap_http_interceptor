@@ -75,10 +75,10 @@ packages:
   gleap_sdk:
     dependency: "direct main"
     description:
-      path: "../gleap_sdk"
-      relative: true
-    source: path
-    version: "6.2.0"
+      name: gleap_sdk
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "6.2.1"
   http:
     dependency: transitive
     description:
