@@ -1,6 +1,7 @@
 library gleap_http_interceptor;
 
 import 'package:gleap_sdk/gleap_sdk.dart';
+import 'package:gleap_sdk/helpers/network_response_type_helper.dart';
 import 'package:gleap_sdk/models/gleap_network_log_models/gleap_network_log_model/gleap_network_log_model.dart';
 import 'package:gleap_sdk/models/gleap_network_log_models/gleap_network_request_model/gleap_network_request_model.dart';
 import 'package:gleap_sdk/models/gleap_network_log_models/gleap_network_response_model/gleap_network_response_model.dart';
@@ -19,17 +20,6 @@ class GleapHttpInterceptor implements InterceptorContract {
 
   @override
   Future<RequestData> interceptRequest({required RequestData data}) async {
-    final GleapNetworkLog gleapNetworkLog = GleapNetworkLog(
-      type: data.method.toString(),
-      url: data.url,
-      date: DateTime.now(),
-      request: GleapNetworkRequest(
-        headers: data.headers,
-        payload: data.body.toString(),
-      ),
-    );
-    networkLogs.add(gleapNetworkLog);
-
     return data;
   }
 
@@ -45,7 +35,7 @@ class GleapHttpInterceptor implements InterceptorContract {
       ),
       response: GleapNetworkResponse(
         status: data.statusCode,
-        responseText: data.body.toString(),
+        responseText: NetworkResponseTypeHelper.getType(data: data.body),
       ),
     );
     networkLogs.add(gleapNetworkLog);
