@@ -26,12 +26,13 @@ class GleapHttpInterceptor implements InterceptorContract {
   @override
   Future<ResponseData> interceptResponse({required ResponseData data}) async {
     final GleapNetworkLog gleapNetworkLog = GleapNetworkLog(
-      type: data.method.toString(),
+      type:
+          data.method != null ? data.method.toString().split('.').last : 'GET',
       url: data.url,
       date: DateTime.now(),
       request: GleapNetworkRequest(
         headers: data.request?.headers,
-        payload: data.request?.body.toString(),
+        payload: data.request?.body,
       ),
       response: GleapNetworkResponse(
         status: data.statusCode,
