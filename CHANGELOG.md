@@ -1,3 +1,4 @@
+## 1.2.0 - Support Gleap widget v7
 ## 1.1.0 - Added minimum Gleap SDK version
 ## 1.0.8 - Updated Gleap SDK
 ## 1.0.7 - Updated Gleap SDK
