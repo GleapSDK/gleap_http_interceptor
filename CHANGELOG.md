@@ -1,4 +1,5 @@
 
+## 1.2.3 - Updated readme
 ## 1.2.2 - Made network logs working for silent crash reports
 ## 1.2.0 - Support Gleap widget v7
 ## 1.1.0 - Added minimum Gleap SDK version
