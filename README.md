@@ -16,20 +16,7 @@ Checkout our [documentation](https://docs.gleap.io/docs/flutter-sdk) for full re
 
 ```dart
 dependencies:
-  gleap_http_interceptor: "^1.2.0"
-```
-
-**Flutter v2 Support**
-
-If you are using Flutter < v3, please import the gleap_sdk as shown below:
-
-```dart
-dependencies:
-  gleap_http_interceptor:
-    git:
-      url: git@github.com:GleapSDK/gleap_http_interceptor.git
-      ref: flutter-v2
-
+  gleap_http_interceptor: "^1.2.1"
 ```
 
 ```dart

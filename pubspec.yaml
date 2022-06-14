@@ -1,6 +1,6 @@
 name: gleap_http_interceptor
 description: A Http Interceptor for Gleap
-version: 1.2.0
+version: 1.2.1
 homepage: https://gleap.io
 
 environment:

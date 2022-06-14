@@ -11,15 +11,6 @@ import 'package:http_interceptor/http_interceptor.dart';
 class GleapHttpInterceptor implements InterceptorContract {
   RingBuffer<GleapNetworkLog> networkLogs = RingBuffer<GleapNetworkLog>(20);
 
-  GleapHttpInterceptor() {
-    Gleap.registerListener(
-      actionName: 'feedbackFlowStarted',
-      callbackHandler: (_) {
-        Gleap.attachNetworkLogs(networkLogs: networkLogs.toList());
-      },
-    );
-  }
-
   @override
   Future<RequestData> interceptRequest({required RequestData data}) async {
     return data;
@@ -41,8 +32,14 @@ class GleapHttpInterceptor implements InterceptorContract {
         responseText: NetworkResponseTypeHelper.getType(data: data.body),
       ),
     );
-    networkLogs.add(gleapNetworkLog);
+    _updateNetworkLogs(gleapNetworkLog);
 
     return data;
+  }
+
+  void _updateNetworkLogs(GleapNetworkLog gleapNetworkLog) {
+    networkLogs.add(gleapNetworkLog);
+
+    Gleap.attachNetworkLogs(networkLogs: networkLogs.toList());
   }
 }
