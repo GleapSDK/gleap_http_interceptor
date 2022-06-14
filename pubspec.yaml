@@ -11,7 +11,10 @@ dependencies:
   flutter:
     sdk: flutter
   http_interceptor: ^1.0.2
-  gleap_sdk: '>=6.4.4'
+  gleap_sdk:
+    git:
+      url: git@github.com:GleapSDK/Flutter-SDK.git
+      ref: flutter-v2
 
 dev_dependencies:
   flutter_test:
