@@ -16,7 +16,7 @@ Checkout our [documentation](https://docs.gleap.io/docs/flutter-sdk) for full re
 
 ```dart
 dependencies:
-  gleap_http_interceptor: "^1.2.0"
+  gleap_http_interceptor: "^1.2.1"
 ```
 
 ```dart
