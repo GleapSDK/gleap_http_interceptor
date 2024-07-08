@@ -1,4 +1,7 @@
 
+## 1.2.4
+Removed upper bound
+
 ## 1.2.3
 Updated the `http` dependency to support a wider range of versions 
 

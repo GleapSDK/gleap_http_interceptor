@@ -1,6 +1,6 @@
 name: gleap_http_interceptor
 description: A Http Interceptor for Gleap
-version: 1.2.3
+version: 1.2.4
 homepage: https://gleap.io
 
 environment:
@@ -8,8 +8,8 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  http_interceptor: '>=1.0.2 <2.0.0'
-  gleap_sdk: '>=6.4.4 <7.0.0'
+  http_interceptor: '>=1.0.2'
+  gleap_sdk: '>=6.4.4'
   flutter:
     sdk: flutter
 
