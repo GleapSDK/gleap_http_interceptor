@@ -28,7 +28,7 @@ dependencies:
 
 ```
 
-Version 2.0 requires `gleap_sdk` 18.2.0 or newer and [http_interceptor](https://pub.dev/packages/http_interceptor) 3.x (Dart 3.8 / Flutter 3.32 or newer).
+Version 2.0 requires `gleap_sdk` 19.0.0 or newer and [http_interceptor](https://pub.dev/packages/http_interceptor) 3.x (Dart 3.8 / Flutter 3.32 or newer).
 
 ```dart
 Client client = InterceptedClient.build(interceptors: [
