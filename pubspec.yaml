@@ -1,15 +1,15 @@
 name: gleap_http_interceptor
 description: "Gleap Flutter HTTP interceptor for network logs in customer feedback and in-app bug reports."
-version: 1.2.4
+version: 2.0.0
 homepage: https://www.gleap.ai
 
 environment:
-  sdk: ">=2.12.0 <4.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.32.0"
 
 dependencies:
-  http_interceptor: '>=1.0.2'
-  gleap_sdk: '>=6.4.4'
+  http_interceptor: '>=3.0.0 <4.0.0'
+  gleap_sdk: ^19.0.0
   flutter:
     sdk: flutter
 
@@ -17,5 +17,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+  http: ^1.2.1
 
 flutter:
